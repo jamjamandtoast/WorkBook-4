@@ -9,9 +9,16 @@ function indexOf() {
 }
 indexOf() */
 
-function parseAndDisplayName() {
-    parseAndDisplayName("Brenda Kaye");
-    parseAndDisplayName("Cher");
-    parseAndDisplayName("Dana Lynn Wyatt");
+function parseAndDisplayName(fullName) {
+    let names = fullName.split(" ");
+    let firstNames = names[0];
+    let lastName = names[names.length - 1];
+
+    console.log("First name:" + firstNames);
+    console.log("Last name:" + lastName);
+    console.log("Full name:" + names);
 }
 
+parseAndDisplayName("Brenda Kaye");
+parseAndDisplayName("Ian Auston");
+parseAndDisplayName("Siddalee Grace");
